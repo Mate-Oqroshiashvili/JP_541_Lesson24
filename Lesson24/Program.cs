@@ -24,9 +24,9 @@ List<User> users = new List<User>()
 //FileHelper<Bank>.WriteInFile(FILE_PATHS.BanksPath, bank);
 //FileHelper<User>.WriteInFile(FILE_PATHS.UsersPath, users);
 
-//FileHelper<Bank>.ReadFromFile(FILE_PATHS.BanksPath);
-//Console.WriteLine();
-//FileHelper<User>.ReadFromFile(FILE_PATHS.UsersPath);
+FileHelper<Bank>.ReadFromFile(FILE_PATHS.BanksPath);
+Console.WriteLine();
+FileHelper<User>.ReadFromFile(FILE_PATHS.UsersPath);
 
 await JsonHelper<User>.WriteInJsonAsync(FILE_PATHS.UsersPath, users);
 
